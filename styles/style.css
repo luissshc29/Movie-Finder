@@ -1,0 +1,193 @@
+body {
+  background: url("../images/sala-de-cinema.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
+}
+
+.cabecalho {
+  display: inline-block;
+  color: antiquewhite;
+  font-size: 0.9em;
+  font-weight: 100;
+  left: 0;
+  padding: 0.5em 0 0 0.5em;
+  align-self: flex-start;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+}
+.principal .container-filme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(to bottom, white, rgb(204, 204, 204));
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin: 1em 0;
+  border-radius: 1.5em;
+  box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+  opacity: 0.9;
+}
+.principal .container-filme .titulo-filme {
+  font-family: "Josefin Sans", sans-serif;
+  grid-column: 1/span 2;
+  font-size: 2.2em;
+  font-weight: 700;
+  padding: 0.8em 0 0.2em 0;
+}
+.principal .container-filme .diretor-filme {
+  grid-column: 1/span 2;
+  font-weight: 300;
+}
+.principal .container-filme .imagem-filme {
+  width: 250px;
+  grid-column: 1/span 2;
+  justify-self: center;
+  margin: 1em 0 0.5em 0;
+  box-shadow: 0 2px 10px black;
+}
+.principal .container-filme .classificacao-filme {
+  grid-column: 1/span 2;
+  font-size: 1.1;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.principal .container-filme .elenco-filme {
+  grid-column: 1/span 2;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+.principal .container-filme .descricao-filme {
+  justify-self: center;
+  grid-column: 1/span 2;
+  line-height: 1.5em;
+  margin: 1em;
+  font-weight: 500;
+}
+.principal .pesquisa-filme {
+  display: inline-block;
+  width: 70vw;
+  margin: 0 auto 1em auto;
+  padding: 1.5em 0;
+  text-align: center;
+  border-radius: 1.5em;
+  box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+  opacity: 0.9;
+}
+.principal .pesquisa-filme::-moz-placeholder {
+  font-size: 1.3em;
+  color: gray;
+}
+.principal .pesquisa-filme::placeholder {
+  font-size: 1.3em;
+  color: gray;
+}
+.principal .mensagem-de-erro, .principal .mensagem-inicial {
+  grid-column: 1/span 2;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 1em;
+}
+.principal .mensagem-de-erro span, .principal .mensagem-inicial span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    display: inline-block;
+    color: antiquewhite;
+    font-size: 1.2em;
+    font-weight: 100;
+    left: 0;
+    padding: 0.5em 0 0 0.5em;
+  }
+  .principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .principal .container-filme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to bottom, white, rgb(204, 204, 204));
+    width: 50%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 1em 0;
+    border-radius: 1.5em;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    opacity: 0.9;
+  }
+  .principal .container-filme .titulo-filme {
+    font-family: "Josefin Sans", sans-serif;
+    grid-column: 1/span 2;
+    font-size: 2.2em;
+    font-weight: 700;
+    padding: 0.8em 0 0.2em 0;
+  }
+  .principal .container-filme .diretor-filme {
+    grid-column: 1/span 2;
+    font-weight: 300;
+  }
+  .principal .container-filme .imagem-filme {
+    width: 250px;
+    grid-column: 1/span 2;
+    justify-self: center;
+    margin: 1em 0 0.5em 0;
+    box-shadow: 0 2px 10px black;
+  }
+  .principal .container-filme .classificacao-filme {
+    grid-column: 1/span 2;
+    font-size: 1.1;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .principal .container-filme .elenco-filme {
+    grid-column: 1/span 2;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+  .principal .container-filme .descricao-filme {
+    justify-self: center;
+    grid-column: 1/span 2;
+    line-height: 1.5em;
+    margin: 1em;
+    font-weight: 500;
+  }
+  .principal .pesquisa-filme {
+    display: inline-block;
+    width: 60vh;
+    margin: 0 auto 1em auto;
+    padding: 1.5em 0;
+    text-align: center;
+    border-radius: 1.5em;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    opacity: 0.9;
+  }
+  .principal .pesquisa-filme::-moz-placeholder {
+    font-size: 1.3em;
+    color: gray;
+  }
+  .principal .pesquisa-filme::placeholder {
+    font-size: 1.3em;
+    color: gray;
+  }
+  .principal .mensagem-de-erro, .principal .mensagem-inicial {
+    grid-column: 1/span 2;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding: 1em;
+  }
+}/*# sourceMappingURL=style.css.map */
